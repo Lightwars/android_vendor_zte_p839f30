@@ -49,52 +49,35 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/zte/p839f30/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/zte/p839f30/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
-    vendor/zte/p839f30/proprietary/lib/libarcsoft_beauty_shot.so:system/lib/libarcsoft_beauty_shot.so \
-    vendor/zte/p839f30/proprietary/lib/libcam.meiyan.so:system/lib/libcam.meiyan.so \
     vendor/zte/p839f30/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/zte/p839f30/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/zte/p839f30/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/zte/p839f30/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_dw9761b_f13n05e_camcorder.so:system/vendor/lib/libactuator_dw9761b_f13n05e_camcorder.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_dw9761b_f13n05e_camera.so:system/vendor/lib/libactuator_dw9761b_f13n05e_camera.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_dw9761b_f13n05e.so:system/vendor/lib/libactuator_dw9761b_f13n05e.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_dw9761_ofilm_camcorder.so:system/vendor/lib/libactuator_dw9761_ofilm_camcorder.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_dw9761_ofilm_camera.so:system/vendor/lib/libactuator_dw9761_ofilm_camera.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_dw9761_ofilm.so:system/vendor/lib/libactuator_dw9761_ofilm.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_common.so:system/vendor/lib/libchromatix_imx214_f13n05e_common.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_hfr_120fps.so:system/vendor/lib/libchromatix_imx214_f13n05e_hfr_120fps.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_f13n05e_hfr_60fps.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_hfr_90fps.so:system/vendor/lib/libchromatix_imx214_f13n05e_hfr_90fps.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_liveshot.so:system/vendor/lib/libchromatix_imx214_f13n05e_liveshot.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_preview.so:system/vendor/lib/libchromatix_imx214_f13n05e_preview.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_f13n05e_snapshot_hdr.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_snapshot.so:system/vendor/lib/libchromatix_imx214_f13n05e_snapshot.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_video_hdr.so:system/vendor/lib/libchromatix_imx214_f13n05e_video_hdr.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_video_hd.so:system/vendor/lib/libchromatix_imx214_f13n05e_video_hd.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_f13n05e_video.so:system/vendor/lib/libchromatix_imx214_f13n05e_video.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_common.so:system/vendor/lib/libchromatix_imx214_olqba15_common.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_hfr_120fps.so:system/vendor/lib/libchromatix_imx214_olqba15_hfr_120fps.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_olqba15_hfr_60fps.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_hfr_90fps.so:system/vendor/lib/libchromatix_imx214_olqba15_hfr_90fps.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_liveshot.so:system/vendor/lib/libchromatix_imx214_olqba15_liveshot.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_preview.so:system/vendor/lib/libchromatix_imx214_olqba15_preview.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_olqba15_snapshot_hdr.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_snapshot.so:system/vendor/lib/libchromatix_imx214_olqba15_snapshot.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_video_hdr.so:system/vendor/lib/libchromatix_imx214_olqba15_video_hdr.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_video_hd.so:system/vendor/lib/libchromatix_imx214_olqba15_video_hd.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_olqba15_video.so:system/vendor/lib/libchromatix_imx214_olqba15_video.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_common.so:system/vendor/lib/libchromatix_s5k5e2_cma189_common.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_cma189_liveshot.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_preview.so:system/vendor/lib/libchromatix_s5k5e2_cma189_preview.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_cma189_snapshot.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_video_hd.so:system/vendor/lib/libchromatix_s5k5e2_cma189_video_hd.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_video.so:system/vendor/lib/libchromatix_s5k5e2_cma189_video.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_common.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_common.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_liveshot.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_preview.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_preview.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_snapshot.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_video_hd.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_video_hd.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_video.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_video.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_bu64291gwz.so:system/vendor/lib/libactuator_bu64291gwz.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_bu64291gwz_camcorder.so:system/vendor/lib/libactuator_bu64291gwz_camcorder.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_bu64291gwz_camera.so:system/vendor/lib/libactuator_bu64291gwz_camera.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_hfr_60.so:system/vendor/lib/libchromatix_imx214_hfr_60.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_hfr_60fps.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_hfr_90fps.so:system/vendor/lib/libchromatix_imx214_hfr_90fps.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_hfr_120.so:system/vendor/lib/libchromatix_imx214_hfr_120.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_hfr_120fps.so:system/vendor/lib/libchromatix_imx214_hfr_120fps.so \
+vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_preview.so:system/vendor/lib/libchromatix_imx214_preview.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_snapshot.so:system/vendor/lib/libchromatix_imx214_snapshot.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_snapshot_hdr.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_video_hd.so:system/vendor/lib/libchromatix_imx214_video_hd.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_video_hdr.so:system/vendor/lib/libchromatix_imx214_video_hdr.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_common.so:system/vendor/lib/libchromatix_s5k5e2_common.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_default_video.so:system/vendor/lib/libchromatix_s5k5e2_default_video.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_eyeverify.so:system/vendor/lib/libchromatix_s5k5e2_eyeverify.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_liveshot.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_preview.so:system/vendor/lib/libchromatix_s5k5e2_preview.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_s5k5e2_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_snapshot.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_imx214.so:system/vendor/lib/libmmcamera_imx214.so \
+	vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_s5k5e2.so:system/vendor/lib/libmmcamera_s5k5e2.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -113,14 +96,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_imx214_f13n05e_eeprom.so:system/vendor/lib/libmmcamera_imx214_f13n05e_eeprom.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_imx214_f13n05e.so:system/vendor/lib/libmmcamera_imx214_f13n05e.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_imx214_olqba15_eeprom.so:system/vendor/lib/libmmcamera_imx214_olqba15_eeprom.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_imx214_olqba15.so:system/vendor/lib/libmmcamera_imx214_olqba15.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_s5k5e2_cma189_eeprom.so:system/vendor/lib/libmmcamera_s5k5e2_cma189_eeprom.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_s5k5e2_cma189.so:system/vendor/lib/libmmcamera_s5k5e2_cma189.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f20_eeprom.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f20_eeprom.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f20.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f20.so \
+	vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
@@ -326,5 +302,5 @@ PRODUCT_COPY_FILES += \
     vendor/zte/p839f30/proprietary/bin/adjust_settings:system/bin/adjust_settings
 
 # Lights
-PRODUCT_COPY_FILES += \
-    vendor/zte/p839f30/proprietary/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so
+#PRODUCT_COPY_FILES += \
+#    vendor/zte/p839f30/proprietary/lib/hw/lights.msm8916.so:system/lib/hw/lights.msm8916.so
