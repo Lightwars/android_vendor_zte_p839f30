@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/p839f30/proprietary/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     vendor/zte/p839f30/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
@@ -47,8 +48,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
+    vendor/zte/p839f30/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     vendor/zte/p839f30/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/zte/p839f30/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
     vendor/zte/p839f30/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/zte/p839f30/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/zte/p839f30/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
@@ -106,7 +107,11 @@ vendor/zte/p839f30/proprietary/vendor/lib/libchromatix_imx214_preview.so:system/
     vendor/zte/p839f30/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/zte/p839f30/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
+    vendor/zte/p839f30/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libOmxMux.so:system/vendor/lib/libOmxMux.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so
+#vendor/zte/p839f30/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
 
 # Camera firmware
 PRODUCT_COPY_FILES += \
@@ -123,7 +128,7 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_COPY_FILES += \
     vendor/zte/p839f30/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/zte/p839f30/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/zte/p839f30/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/zte/p839f30/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
@@ -140,7 +145,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/p839f30/proprietary/bin/location-mq:system/bin/location-mq \
     vendor/zte/p839f30/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/zte/p839f30/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    vendor/zte/p839f30/proprietary/lib/hw/gps.msm8916.so:system/lib/hw/gps.msm8916.so \
     vendor/zte/p839f30/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/zte/p839f30/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/zte/p839f30/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
@@ -157,6 +161,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/p839f30/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so
+#    vendor/zte/p839f30/proprietary/lib/hw/gps.msm8916.so:system/lib/hw/gps.msm8916.so \
 
 # Graphics
 PRODUCT_COPY_FILES += \
@@ -169,6 +174,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/p839f30/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
@@ -209,7 +215,6 @@ PRODUCT_COPY_FILES += \
 
 # Postprocessing
 PRODUCT_COPY_FILES += \
-    vendor/zte/p839f30/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/zte/p839f30/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so
@@ -252,7 +257,6 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    vendor/zte/p839f30/proprietary/bin//sensord:system/bin/sensord \
     vendor/zte/p839f30/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so
 
 # Thermal
@@ -269,8 +273,9 @@ PRODUCT_COPY_FILES += \
 
 # Touchscreen
 PRODUCT_COPY_FILES += \
-    vendor/zte/p839f30/proprietary/bin/init.atmel_ts.sh:system/bin/init.atmel_ts.sh \
-    vendor/zte/p839f30/proprietary/etc/firmware/A4_15_2.2_AA.raw:system/etc/firmware/A4_15_2.2_AA.raw
+    vendor/zte/p839f30/proprietary/etc/firmware/dsx_jdi_4291.img:system/etc/firmware/dsx_jdi_4291.img \
+    vendor/zte/p839f30/proprietary/bin/firmware_update:system/bin/firmware_update \
+    vendor/zte/p839f30/proprietary/data/cywee/project_204.hex:system/data/cywee/project_204.hex
 
 # Venus (media) firmware
 PRODUCT_COPY_FILES += \
@@ -298,8 +303,21 @@ PRODUCT_COPY_FILES += \
     
 # Misc
 PRODUCT_COPY_FILES += \
-    vendor/zte/p839f30/proprietary/bin/adjust_serialno:system/bin/adjust_serialno \
-    vendor/zte/p839f30/proprietary/bin/adjust_settings:system/bin/adjust_settings
+    vendor/zte/p839f30/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
+    vendor/zte/p839f30/proprietary/bin/brctl:system/bin/brctl \
+    vendor/zte/p839f30/proprietary/bin/mmi:system/bin/mmi \
+    vendor/zte/p839f30/proprietary/bin/qcom-system-daemon:system/bin/qcom-system-daemon \
+    vendor/zte/p839f30/proprietary/bin/usbhub:system/bin/usbhub \
+    vendor/zte/p839f30/proprietary/bin/usbhub_init:system/bin/usbhub_init \
+    vendor/zte/p839f30/proprietary/bin/usb_uicc_client:system/bin/usb_uicc_client \
+    vendor/zte/p839f30/proprietary/bin/vm_bms:system/bin/vm_bms \
+    vendor/zte/p839f30/proprietary/lib/libdashplayer.so:system/bin/libdashplayer.so \
+    vendor/zte/p839f30/proprietary/lib/libmm-omxcore.so:system/bin/libmm-omxcore.so \
+    vendor/zte/p839f30/proprietary/lib/libOmxAacEnc.so:system/bin/libOmxAacEnc.so \
+    vendor/zte/p839f30/proprietary/lib/libOmxAmrEnc.so:system/bin/libOmxAmrEnc.so \
+    vendor/zte/p839f30/proprietary/lib/libOmxEvrcEnc.so:system/bin/libOmxEvrcEnc.so \
+    vendor/zte/p839f30/proprietary/lib/libOmxQcelp13Enc.so:system/bin/libOmxQcelp13Enc.so \
+    vendor/zte/p839f30/proprietary/lib/libsensor_cal.so:system/bin/libsensor_cal.so \
 
 # Lights
 #PRODUCT_COPY_FILES += \
