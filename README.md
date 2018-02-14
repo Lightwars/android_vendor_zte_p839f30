@@ -1,1 +1,1 @@
-# android_vendor_vodafone_p839v55
+# android_vendor_zte_p839f30
