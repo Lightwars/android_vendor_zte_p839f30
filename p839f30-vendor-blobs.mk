@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/p839f30/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
     vendor/zte/p839f30/proprietary/vendor/bin/chamomile_provision:system/vendor/bin/chamomile_provision \
 vendor/zte/p839f30/proprietary/vendor/bin/fidodaemon:system/vendor/bin/fidodaemon \
-vendor/zte/p839f30/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+vendor/zte/p839f30/proprietary/bin/perfd:system/bin/perfd \
 vendor/zte/p839f30/proprietary/vendor/bin/sampleauthdaemon:system/vendor/bin/sampleauthdaemon \
     vendor/zte/p839f30/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_ap_daemon \
     vendor/zte/p839f30/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
@@ -45,7 +45,6 @@ vendor/zte/p839f30/proprietary/vendor/bin/sampleauthdaemon:system/vendor/bin/sam
     vendor/zte/p839f30/proprietary/vendor/lib/egl/libRBGLESv1_CM_adreno.so:system/vendor/lib/egl/libRBGLESv1_CM_adreno.so \
     vendor/zte/p839f30/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so \
     vendor/zte/p839f30/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
-    vendor/zte/p839f30/proprietary/vendor/lib/hw/keystore.msm8916.so:system/vendor/lib/hw/keystore.msm8916.so \
     vendor/zte/p839f30/proprietary/vendor/lib/hw/sound_trigger.primary.msm8916.so:system/vendor/lib/hw/sound_trigger.primary.msm8916.so \
     vendor/zte/p839f30/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/zte/p839f30/proprietary/vendor/lib/mediadrm/libprmediadrmdecrypt.so:system/vendor/lib/mediadrm/libprmediadrmdecrypt.so \
@@ -103,6 +102,9 @@ vendor/zte/p839f30/proprietary/vendor/bin/sampleauthdaemon:system/vendor/bin/sam
     vendor/zte/p839f30/proprietary/vendor/lib/libactuator_a3907.so:system/vendor/lib/libactuator_a3907.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libactuator_a3907_camcorder.so:system/vendor/lib/libactuator_a3907_camcorder.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libactuator_a3907_camera.so:system/vendor/lib/libactuator_a3907_camera.so \
+	vendor/zte/p839f30/proprietary/vendor/lib/libactuator_bu64291gwz.so:system/vendor/lib/libactuator_bu64291gwz.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_bu64291gwz_camcorder.so:system/vendor/lib/libactuator_bu64291gwz_camcorder.so \
+    vendor/zte/p839f30/proprietary/vendor/lib/libactuator_bu64291gwz_camera.so:system/vendor/lib/libactuator_bu64291gwz_camera.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libactuator_bu64297gwz.so:system/vendor/lib/libactuator_bu64297gwz.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libactuator_bu64297gwz_camcorder.so:system/vendor/lib/libactuator_bu64297gwz_camcorder.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libactuator_bu64297gwz_camera.so:system/vendor/lib/libactuator_bu64297gwz_camera.so \
@@ -646,7 +648,7 @@ vendor/zte/p839f30/proprietary/vendor/bin/sampleauthdaemon:system/vendor/bin/sam
     vendor/zte/p839f30/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-vendor/zte/p839f30/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+	vendor/zte/p839f30/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/zte/p839f30/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
@@ -814,3 +816,6 @@ vendor/zte/p839f30/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so 
     vendor/zte/p839f30/proprietary/lib/libzte_zcore.so:system/lib/libzte_zcore.so \
     vendor/zte/p839f30/proprietary/priv-app/com.qualcomm.location:system/priv-app/com.qualcomm.location \
     vendor/zte/p839f30/proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk:system/priv-app/com.qualcomm.location/com.qualcomm.location.apk \
+	vendor/zte/p839f30/proprietary/etc/firmware/dsx_jdi_4291.img:system/etc/firmware/dsx_jdi_4291.img \
+    vendor/zte/p839f30/proprietary/bin/firmware_update:system/bin/firmware_update \
+    vendor/zte/p839f30/proprietary/data/cywee/project.hex:system/data/cywee/project_204.hex
